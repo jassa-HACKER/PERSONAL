@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Page</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #e63946;
+      margin: 0.5rem 0;
+    }
+
+    h3 {
+      text-align: center;
+      color: #5f5f5e;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #6b6e70;
+      margin: 0.5rem 0;
+    }
+
+    /* Layout */
+    .abc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem;
+    }
+
+    .container {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .side {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Profile Image */
+    .profile-img {
+      margin-top: 1rem;
+      border: 2px solid #666;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    /* Buttons */
+    .knowmore {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #d12b2b;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .knowmore:hover {
+      background-color: #a61f1f;
+    }
+
+    /* Social Links */
+    .link {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      margin: 0.3rem;
+      transition: transform 0.3s ease;
+    }
+
+    .link:hover {
+      transform: scale(1.1);
+    }
+
+    /* Movies / Songs Section */
+    .movie {
+      color: #5d5e5e;
+      margin-bottom: 0.3rem;
+    }
+
+    .movieimg {
+      border-radius: 8px;
+      width: 100px;
+      height: auto;
+      margin-right: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 0.5rem;
+    }
+
+    td {
+      vertical-align: top;
+    }
+
+    /* Responsive Video */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      margin-top: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .abc {
+        flex-direction: column;
+      }
+
+      .container,
+      .side {
+        width: 100%;
+      }
+
+      .movieimg {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="abc">
+    <!-- Left Column -->
+    <div class="container">
+      <div class="box" style="text-align:center;">
+        <img class="profile-img" src="c:/IMG_2455.JPG" alt="Profile Picture">
+        <h2>JASSA</h2>
+        <p>Welcome to a space where personal passions and cinematic wonders collide.</p>
+        <button type="button" class="knowmore">Click here to know more</button>
+      </div>
+
+      <div class="box" style="text-align:center;">
+        <h3>Connect With Me</h3>
+        <a href="https://www.instagram.com/_j4_jassa_">
+          <img class="link" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/JASSA">
+          <img class="link" src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg" alt="Twitter">
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="box side">
+      <h3>My Favourite Songs & Shows</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td><img class="movieimg" src="c:/SIDHU.png" alt="Barota"></td>
+            <td>
+              <h3 class="movie">Barota</h3>
+              <p>Barota is written by Sidhu Moosewala and became a trending song worldwide.</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="movieimg" src="c:/yjkd.png" alt="Yarr Jigri Kasooti Digri"></td>
+            <td>
+              <h3 class="movie">Yarr Jigri Kasooti Digri</h3>
+              <p>This web series, written & directed by Rabby Tiwana, beautifully portrays friendship and life situations.</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="movieimg" src="c:\brotherhood.png" alt="Suzume"></td>
+            <td>
+              <h3 class="movie">Maa Jaywe</h3>
+              <p>The Punjabi movie Maa Jaye (2025) is a powerful family drama about partition, perseverance, and brotherhood. It stars Jimmy Sheirgill, Manav Vij, and Yograj Singh, and is directed by Navaniat Singh.
+.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+
+  <!-- Footer -->
+  <div class="box" style="text-align:center;">
+    <h3>About This Page</h3>
+    <p>This page is a glimpse into my creative and curious world—where code meets storytelling, and design meets emotion. From favorite films to social connections, every section reflects a piece of who I am and what I love.</p>
+  </div>
+</body>
+
+</html>
